@@ -16,7 +16,7 @@ def global_init():
     if __factory:
         return
 
-    conn_str = f'postgresql://ivan_galochkin:{PASSWORD}@188.119.67.135/geodb'
+    conn_str = f'postgresql://ivan_galochkin:{PASSWORD}@/geodb'
     print(f"Подключение к базе данных по адресу {conn_str}")
 
     engine = sa.create_engine(conn_str, echo=True)
